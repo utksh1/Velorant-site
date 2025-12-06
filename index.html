@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VALORANT - Competitive Multiplayer Tactical Shooter</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js" type="module"></script>
 </head>
+
 <body>
     <nav class="navbar">
         <div class="nav-container">
@@ -23,6 +26,17 @@
                 <li><a href="#esports">ESPORTS</a></li>
                 <li><a href="#community">COMMUNITY</a></li>
             </ul>
+            <label class="switch" for="themeToggle" title="Toggle theme">
+                <input type="checkbox" id="themeToggle">
+                <span class="slider">
+                    <span class="star star_1"></span>
+                    <span class="star star_2"></span>
+                    <span class="star star_3"></span>
+                    <svg class="cloud" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                        <path fill="#fff" d="M50 20c-8.3 0-15 6.7-15 15 0 1.1.1 2.1.3 3.1C28.5 40.2 23 46.5 23 54c0 7.2 5.8 13 13 13h28c7.2 0 13-5.8 13-13 0-7.5-5.5-13.8-12.3-15.9.2-1 .3-2 .3-3.1 0-8.3-6.7-15-15-15z"/>
+                    </svg>
+                </span>
+            </label>
             <button class="play-btn">PLAY NOW</button>
         </div>
     </nav>
@@ -32,11 +46,23 @@
             <img src="./abc.png" alt="VALORANT" class="hero-logo" draggable="false">
             <p>Multiplayer character-based tactical shooter</p>
             <div class="hero-buttons">
-                <button class="btn btn-primary">PLAY FREE</button>
+                <a class="button" href="#" style="--clr:#e63946">
+                    <span class="button-decor"></span>
+                    <span class="button-content">
+                        <span class="button__icon">
+                            <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" width="24">
+                                <circle opacity=".3" cx="25" cy="25" r="25" fill="#fff"></circle>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M32 25L20 18V32L32 25Z" fill="#fff">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="button__text">PLAY FREE</span>
+                    </span>
+                </a>
             </div>
         </div>
         <div class="hero-background">
-            <video src="velo.mp4" autoplay muted loop playsinline></video>
+            <video src="velo.mp4" autoplay muted loop></video>
             <div class="hero-gradient"></div>
         </div>
     </section>
@@ -48,7 +74,8 @@
                 <div class="feature-card">
                     <div class="feature-icon"></div>
                     <h3>Tactical Gameplay</h3>
-                    <p>Use abilities strategically to outplay your opponents with skill-based gunplay and tactical decisions.</p>
+                    <p>Use abilities strategically to outplay your opponents with skill-based gunplay and tactical
+                        decisions.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon"></div>
@@ -58,7 +85,8 @@
                 <div class="feature-card">
                     <div class="feature-icon"></div>
                     <h3>Competitive Ranking</h3>
-                    <p>Climb the ranked ladder from Iron to Radiant through competitive matches and skill progression.</p>
+                    <p>Climb the ranked ladder from Iron to Radiant through competitive matches and skill progression.
+                    </p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon"></div>
@@ -80,12 +108,14 @@
         <div class="modes-grid">
             <div class="mode-card">
                 <div class="mode-header">Unrated</div>
-                <p>Casual matches where you can experiment with agents and improve your skills without ranking consequences.</p>
+                <p>Casual matches where you can experiment with agents and improve your skills without ranking
+                    consequences.</p>
                 <span class="mode-tag">CASUAL</span>
             </div>
             <div class="mode-card">
                 <div class="mode-header">Competitive</div>
-                <p>Ranked matches to climb the competitive ladder and test your skills against players at your level.</p>
+                <p>Ranked matches to climb the competitive ladder and test your skills against players at your level.
+                </p>
                 <span class="mode-tag">RANKED</span>
             </div>
             <video src="./gamemode.mp4" autoplay muted loop playsinline></video>
@@ -94,16 +124,32 @@
 
     <section class="battle-pass">
         <img src="./bp.png" alt="Battle Pass" class="bp-image" draggable="false">
-        <dotlottie-wc src="https://lottie.host/c81ef68a-34b4-488e-8fc9-04ab6895be79/hYkZEEF2az.lottie" autoplay loop></dotlottie-wc>
+        <dotlottie-wc src="https://lottie.host/c81ef68a-34b4-488e-8fc9-04ab6895be79/hYkZEEF2az.lottie" autoplay
+            loop></dotlottie-wc>
         <div class="battle-pass-content">
-            <button class="btn btn-primary" id="BP-button">VIEW CURRENT BATTLE PASS</button>
+            <a class="button" href="#" id="BP-button" style="--clr:#00d9ff">
+                <span class="button-decor"></span>
+                <span class="button-content">
+                    <span class="button__icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20">
+                            <path
+                                d="M15 19L17 21L21 17M13 3H8.2C7.0799 3 6.51984 3 6.09202 3.21799C5.71569 3.40973 5.40973 3.71569 5.21799 4.09202C5 4.51984 5 5.0799 5 6.2V17.8C5 18.9201 5 19.4802 5.21799 19.908C5.40973 20.2843 5.71569 20.5903 6.09202 20.782C6.51984 21 7.0799 21 8.2 21H12"
+                                stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M13 3L19 9M13 3V7.4C13 7.96005 13 8.24008 13.109 8.45399C13.2049 8.64215 13.3578 8.79513 13.546 8.89101C13.7599 9 14.0399 9 14.6 9H19M19 9V13.5"
+                                stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    <span class="button__text">VIEW BATTLE PASS</span>
+                </span>
+            </a>
         </div>
     </section>
 
     <section class="esports" id="esports">
         <h2>VALORANT ESPORTS</h2>
         <p class="section-subtitle">Watch the world's best teams compete</p>
-        
+
         <div class="esports-grid">
             <div class="esports-card">
                 <div class="esports-image">
@@ -120,7 +166,7 @@
                 <p>Regional competitions in Americas, EMEA, Pacific, and China</p>
             </div>
             <div class="esports-card">
-                <div class="esports-image">CIRCUIT</div>
+                <div class="esports-image"><img src="vctc.jpg" alt="VCTC" id="VCTC" draggable="false"></div>
                 <h3>VCT Circuit</h3>
                 <p>Tier-1 and Tier-2 competition pathways for emerging and established teams</p>
             </div>
@@ -131,18 +177,28 @@
         <h2>LATEST NEWS</h2>
         <div class="news-grid">
             <article class="news-card">
+                <div class="news-image">
+                    <img src="1.jpg" alt="Episode 9 Act I" draggable="false">
+                </div>
                 <div class="news-date">Nov 15, 2025</div>
                 <h3>Episode 9 Act I Now Live</h3>
-                <p>New agent Phantom arrives with game-changing abilities. Experience tactical depth like never before.</p>
+                <p>New agent Phantom arrives with game-changing abilities. Experience tactical depth like never before.
+                </p>
                 <a href="#" class="read-more">READ MORE →</a>
             </article>
             <article class="news-card">
+                <div class="news-image">
+                    <img src="2.png" alt="Ranked 2.0" draggable="false">
+                </div>
                 <div class="news-date">Nov 10, 2025</div>
                 <h3>Ranked 2.0 Launches Tomorrow</h3>
                 <p>A complete overhaul of our competitive system for fairer matchmaking and better progression.</p>
                 <a href="#" class="read-more">READ MORE →</a>
             </article>
             <article class="news-card">
+                <div class="news-image">
+                    <img src="3.jpg" alt="VCT Champions" draggable="false">
+                </div>
                 <div class="news-date">Nov 5, 2025</div>
                 <h3>VCT Champions Coming Soon</h3>
                 <p>The world's best teams are preparing. Get ready for the most competitive play of the year.</p>
@@ -154,92 +210,46 @@
     <section class="community" id="community">
         <h2>JOIN OUR COMMUNITY</h2>
         <p class="section-subtitle">Connect with millions of players worldwide</p>
-        
+
         <div class="community-links">
             <a href="#" class="community-card">
-                <div class="community-icon"></div>
+                <div class="community-icon">
+                    <img src="https://media.tenor.com/NcNdYO-RP5kAAAAi/discord.gif" alt="Discord" draggable="false">
+                </div>
                 <h3>Discord</h3>
                 <p>Chat with players globally</p>
             </a>
             <a href="#" class="community-card">
-                <div class="community-icon"></div>
+                <div class="community-icon">
+                    <img src="https://c.tenor.com/LE3loyXkv2MAAAAC/tenor.gif" alt="Twitch" draggable="false">
+                </div>
                 <h3>Twitch</h3>
                 <p>Watch live streams and tournaments</p>
             </a>
             <a href="#" class="community-card">
-                <div class="community-icon"></div>
+                <div class="community-icon">
+                    <img src="https://media.tenor.com/Bbaf7jFc3ZEAAAAi/twitter-png.gif" alt="Twitter" draggable="false">
+                </div>
                 <h3>Twitter</h3>
                 <p>Follow official updates and news</p>
             </a>
             <a href="#" class="community-card">
-                <div class="community-icon"></div>
+                <div class="community-icon">
+                    <img src="https://media.tenor.com/148clcovc-8AAAAi/hearts-love.gif" alt="YouTube" draggable="false">
+                </div>
                 <h3>YouTube</h3>
                 <p>Cinematic trailers and highlights</p>
             </a>
         </div>
-            <div class="stat-box">
-                <h3>25M+</h3>
-                <p>Players Worldwide</p>
-            </div>
-            <div class="stat-box">
-                <h3>500+</h3>
-                <p>Professional Esports Teams</p>
-            </div>
-            <div class="stat-box">
-                <h3>100+</h3>
-                <p>Countries</p>
-            </div>
-            <div class="stat-box">
-                <h3>24/7</h3>
-                <p>Competitive Matchmaking</p>
-            </div>
-
     </section>
 
-      
+
 
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>VALORANT</h4>
-                <ul>
-                    <li><a href="#">Play</a></li>
-                    <li><a href="#">Agents</a></li>
-                    <li><a href="#">Updates</a></li>
-                    <li><a href="#">Esports</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>SUPPORT</h4>
-                <ul>
-                    <li><a href="#">Help Center</a></li>
-                    <li><a href="#">Report a Bug</a></li>
-                    <li><a href="#">Account Security</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>LEGAL</h4>
-                <ul>
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Cookie Settings</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>FOLLOW</h4>
-                <ul>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">YouTube</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Discord</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
             <p>&copy; 2025 Riot Games, Inc. All rights reserved.</p>
-        </div>
     </footer>
-    
+
+    <script src="script.js"></script>
 </body>
+
 </html>
